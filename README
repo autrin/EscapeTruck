@@ -1,0 +1,24 @@
+***Java GameBoard Solver***
+Overview
+
+This project implements a Java program to solve a strategy game where vehicles must be moved on a grid so that an ice cream truck (vehicle 0) reaches an escape location. The goal is to compute one of the shortest plans to solve the puzzle.
+Features
+
+    Reads the game configuration from a text file.
+    Uses breadth-first search (BFS) to compute the shortest plan.
+    Calculates the number of possible shortest paths.
+    Includes a backtracking mechanism to trace the solution plan.
+
+**How to Run**
+
+    Input Format: A text file where:
+        The first line contains the number of vehicles.
+        Each subsequent line lists the grid locations occupied by each vehicle.
+
+**Classes**
+
+    GameBoard: Manages the game logic, reading input, computing the plan, and counting shortest paths.
+    GameState: Represents the state of the game at any given time.
+    Pair: Encapsulates a vehicle and its move direction.
+    Vehicle: Holds vehicle-related information (ID, locations, and movement direction).
+    HashKey: Used for efficient state lookups in a hash map.
