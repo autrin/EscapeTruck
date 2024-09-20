@@ -1,4 +1,5 @@
 # Java GameBoard Solver
+
 ## Overview
 
 This project implements a Java program to solve a strategy game where vehicles must be moved on a grid so that an ice cream truck (vehicle 0) reaches an escape location. The goal is to compute one of the shortest plans to solve the puzzle.
