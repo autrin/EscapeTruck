@@ -24,21 +24,21 @@ public class GameBoard {
     boolean canEscape = false;
     private HashMap<HashKey, GameState> map = new HashMap<>();
 
-    // public static void main(String[] args) throws Exception {
-    //     GameBoard gameBoard = new GameBoard();
-    //     String fileName = "11.txt";
-    //     gameBoard.readInput(fileName);
-    //     ArrayList<Pair> path = gameBoard.getPlan();
+    public static void main(String[] args) throws Exception {
+        GameBoard gameBoard = new GameBoard();
+        String fileName = "src\\21.txt";
+        gameBoard.readInput(fileName);
+        ArrayList<Pair> path = gameBoard.getPlan();
 
-    //     if (path != null) {
-    //         for (Pair pair : path) {
-    //             System.out.println(pair.getId() + " " + pair.getDirection());
-    //         }
-    //         System.out.println(gameBoard.getNumOfPaths());
-    //     } else {
-    //         System.out.println("No valid path found.");
-    //     }
-    // }
+        if (path != null) {
+            for (Pair pair : path) {
+                System.out.println(pair.getId() + " " + pair.getDirection());
+            }
+            System.out.println(gameBoard.getNumOfPaths());
+        } else {
+            System.out.println("No valid path found.");
+        }
+    }
 
     /**
      * Initializes an empty game board.
